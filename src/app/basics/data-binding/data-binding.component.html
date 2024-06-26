@@ -1,0 +1,18 @@
+<h1>String Interpolation</h1>
+
+<h3>{{ title }}</h3>
+<p>Hello, my name is {{ user.name }} and I am {{ user.age }} years old.</p>
+
+<h1>Property binding</h1>
+
+<img [src]="imageUrl" alt="Angular Logo">
+<button [disabled]="isButtonDisabled">Click Me</button>
+
+<h1>Event binding</h1>
+
+<button (click)="increment()">Increment</button>
+<p>Count: {{ count }}</p>
+
+<h1>Two way binding</h1>
+<input [(ngModel)]="name" placeholder="Enter your name">
+<p>Hello, {{ name }}!</p>

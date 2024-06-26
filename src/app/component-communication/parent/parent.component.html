@@ -1,0 +1,13 @@
+<p>parent component</p>
+
+<h2>{{ childMessage }}</h2>
+
+<!-- Parent to child and child to parent communication -->
+<app-child
+  [childMessage]="parentMessage"
+  (messageEvent)="receiveMessage($event)"
+></app-child>
+
+<!-- Non related component communication -->
+<!-- <app-sibling></app-sibling>
+<app-sibling02></app-sibling02> -->

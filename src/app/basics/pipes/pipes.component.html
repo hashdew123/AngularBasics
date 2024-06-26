@@ -1,0 +1,35 @@
+<!-- Date pipe -->
+<h1>Date pipe</h1>
+
+<p>Original Date: {{ todayDateTime | date }}</p>
+
+<p>Formatted Date (Full): {{ todayDateTime | date:'fullDate' }}</p>
+
+<p>Formatted Date (Full): {{ todayDateTime | date:'medium' }}</p>
+
+<p>Formatted Date (Short): {{ todayDateTime | date:'shortDate' }}</p>
+
+<p>Formatted Date (Time): {{ todayDateTime | date:'shortTime' }}</p>
+
+<!-- Currency pipe -->
+<h1>Currency pipe</h1>
+
+<p>{{value | currency:'INR':'code'}}</p>
+
+<p>{{value | currency:'CAD':'symbol'}}</p>
+
+<p>{{value |currency:'CAD':'symbol-narrow'}}</p>
+
+<p>{{value |currency:'INR':'symbol-narrow'}}</p>
+
+<p>{{value | currency:'INR':'Indian Rupee'}}</p>
+
+<!-- Uppercase pipe -->
+<h1>UpperCase pipe</h1>
+
+<p>{{ 'text' | uppercase }}</p>
+
+<!-- Lowercase pipe -->
+<h1>LowerCase pipe</h1>
+
+<p>{{ 'TEXT' | lowercase }}</p>
